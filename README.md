@@ -5,15 +5,21 @@ It highlights how medical staff and system components interact to ensure patient
 
 ---
 
-## 📊 Diagrams
+## 🖼️ UML Sequence Diagrams
 
 ### 1. Monitor and Alert on Vital Signs
 Illustrates how patient sensors send vital data (heart rate, blood pressure, temperature, etc.) to the monitoring system.  
 When readings exceed set thresholds, alerts are sent to the nurse workstation for acknowledgment and logging.
 
+![Monitor and Alert on Vital Signs](diagrams/sequence_monitor_alert.png)
+
+---
+
 ### 2. Set Personalized Vital Ranges
 Shows how doctors can personalize patient vital sign thresholds.  
 The system retrieves current settings, updates new ranges, and confirms the changes in the patient database.
+
+![Set Personalized Vital Ranges](diagrams/sequence_set_vital_ranges.png)
 
 ---
 
@@ -24,7 +30,6 @@ src/
 ├── nurse_workstation.py # Displays alerts and records nurse acknowledgments
 ├── doctor_interface.py # Allows doctors to customize vital sign thresholds
 └── patient_database.py # Stores patient data and vital range settings
-
 
 ---
 
@@ -47,3 +52,4 @@ They can be viewed directly on GitHub or downloaded for presentation and documen
 Designed as part of a portfolio project to demonstrate system design and documentation skills for healthcare technology applications.
 
 ---
+
